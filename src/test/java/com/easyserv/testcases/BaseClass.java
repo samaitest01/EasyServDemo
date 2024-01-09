@@ -39,8 +39,7 @@ public class BaseClass {
             TakesScreenshot ts = (TakesScreenshot) driver;
             File source = ts.getScreenshotAs(OutputType.FILE);
               String destinationPath = "C:\\Users\\admin\\IdeaProjects\\EasyServDemo\\Screenshots\\" + screenshotName + ".png";
-           // String destinationPath = "C:\\Users\\admin\\IdeaProjects\\EasyServDemo\\Screenshots" + screenshotName + ".png";
-            File destination = new File(destinationPath);
+              File destination = new File(destinationPath);
             FileHandler.copy(source, destination);
             System.out.println("Screenshot captured: " + destinationPath);
         } catch (IOException e) {

@@ -7,7 +7,8 @@ import org.junit.Test;
 public class TC_LoginTest_001 extends BaseClass
 {
     @Test
-public void loginTest() throws InterruptedException {
+public void loginTest() throws InterruptedException
+    {
     driver.get(URL);
     Login lp = new Login(driver);
     BaseClass BC = new BaseClass();
@@ -17,8 +18,5 @@ public void loginTest() throws InterruptedException {
     lp.setStore();
     lp.setNextbtn();
     BC.captureScreenshot(driver,"LoginScreenshot");
-
-
-
-}
+    }
 }
