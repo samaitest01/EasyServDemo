@@ -21,10 +21,11 @@ public class TC_sortcustomer_003 extends BaseClass
         customersearch cs = new  customersearch(driver);
         cs.setCustomermngt();
         sortcustomer srt = new sortcustomer(driver);
-        srt.setSortbyname();
         srt.setSortbyphone();
         srt.setGetSortbyemail();
-        BC.captureScreenshot(driver,"LoginScreenshot");
+        srt.setSortbyname();
+        Thread.sleep(3000);
+        BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
 
     }
 

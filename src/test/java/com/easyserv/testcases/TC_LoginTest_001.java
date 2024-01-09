@@ -17,6 +17,7 @@ public void loginTest() throws InterruptedException
     lp.setBtnsignin();
     lp.setStore();
     lp.setNextbtn();
-    BC.captureScreenshot(driver,"LoginScreenshot");
+    Thread.sleep(3000);
+    BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
     }
 }
