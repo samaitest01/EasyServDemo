@@ -24,21 +24,21 @@ public class BaseClass {
 
     {
         ChromeOptions options = new ChromeOptions();
-       // System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\IdeaProjects\\EasyServDemo\\Driver\\chromedriver.exe");
-         driver = new ChromeDriver();
+        driver = new ChromeDriver();
+         driver.manage().window().maximize();
     }
     @AfterClass
     public static void exit()
 
     {
-       // driver.quit();
+       //driver.quit();
 
     }
     public static void captureScreenshot(WebDriver driver, String screenshotName) {
         try {
             TakesScreenshot ts = (TakesScreenshot) driver;
             File source = ts.getScreenshotAs(OutputType.FILE);
-              String destinationPath = "C:\\Users\\admin\\IdeaProjects\\EasyServDemo\\Screenshots\\" + screenshotName + ".png";
+              String destinationPath = "C:\\Users\\Austraxpc59\\IdeaProjects\\EasyServDemo\\Screenshots\\" + screenshotName + ".png";
               File destination = new File(destinationPath);
             FileHandler.copy(source, destination);
             System.out.println("Screenshot captured: " + destinationPath);

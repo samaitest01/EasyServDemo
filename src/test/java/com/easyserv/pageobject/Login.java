@@ -17,12 +17,10 @@ public class Login
 {
 
     WebDriver ldriver;
-
     public Login(WebDriver rdriver)
     {
-
-        ldriver = rdriver;
-        PageFactory.initElements(ldriver, this);
+      ldriver = rdriver;
+      PageFactory.initElements(ldriver, this);
     }
 
     @FindBy(id = "email")
