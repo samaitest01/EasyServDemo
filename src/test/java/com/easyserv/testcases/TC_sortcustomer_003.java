@@ -1,9 +1,8 @@
 package com.easyserv.testcases;
-
 import com.easyserv.pageobject.Login;
 import com.easyserv.pageobject.customersearch;
 import com.easyserv.pageobject.sortcustomer;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class TC_sortcustomer_003 extends BaseClass
 {

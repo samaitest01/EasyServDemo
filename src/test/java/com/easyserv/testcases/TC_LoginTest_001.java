@@ -2,7 +2,8 @@ package com.easyserv.testcases;
 
 import com.easyserv.pageobject.Login;
 import com.easyserv.testcases.BaseClass;
-import org.junit.Test;
+import org.testng.annotations.Test;
+
 
 public class TC_LoginTest_001 extends BaseClass
 {

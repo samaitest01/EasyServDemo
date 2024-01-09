@@ -1,22 +1,9 @@
 package com.easyserv.testcases;
-
 import com.easyserv.pageobject.Login;
 import com.easyserv.pageobject.customersearch;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.TestWatcher;
-import org.junit.runner.Description;
+import org.testng.annotations.Test;
 
 public class TC_Customersearch_Test_002 extends BaseClass {
-
-    @Rule
-    public TestWatcher screenshotOnFailure = new TestWatcher() {
-        @Override
-        protected void failed(Throwable e, Description description) {
-            String screenshotName = description.getMethodName() + "_failure";
-            captureScreenshot(driver, screenshotName);
-        }
-    };
 
     @Test
     public void loginTest() throws InterruptedException
