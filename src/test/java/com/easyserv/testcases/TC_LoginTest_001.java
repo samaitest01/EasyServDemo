@@ -1,7 +1,7 @@
 package com.easyserv.testcases;
 
 import com.easyserv.pageobject.Login;
-import com.easyserv.testcases.BaseClass;
+import com.easyserv.selenium.BaseClass;
 import org.testng.annotations.Test;
 
 
