@@ -9,13 +9,13 @@ import java.util.concurrent.TimeUnit;
 
 public class sortcustomer {
 
-    WebDriver ldriver;
+    WebDriver driver;
 
     public sortcustomer(WebDriver rdriver)
     {
-        ldriver = rdriver;
-        PageFactory.initElements(ldriver, this);
-        ldriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver = rdriver;
+        PageFactory.initElements(driver, this);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     @FindBy(xpath = "//span[normalize-space()='Customer Name']")WebElement sortbyname;
     @FindBy(xpath = "//span[normalize-space()='Phone Number']") WebElement sortbyphone;

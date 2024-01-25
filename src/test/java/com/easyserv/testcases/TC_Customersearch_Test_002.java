@@ -8,27 +8,16 @@ import org.testng.annotations.Test;
 public class TC_Customersearch_Test_002 extends BaseClass {
 
     @Test
-    public void loginTest() throws InterruptedException
-    {
+    public void customersearch() throws InterruptedException {
         driver.get(URL);
         Login lp = new Login(driver);
         BaseClass BC = new BaseClass();
         lp.loginmethod(UserName,Password);
-        /*lp.setTxtemail(UserName);
-        lp.setTxtpwd(Password);
-        lp.setBtnsignin();
-        lp.setStore();
-        lp.setNextbtn();*/
-    }
-    @Test
-    public void customersearch() throws InterruptedException {
         customersearch cs = new customersearch(driver);
-        Thread.sleep(3000);
         cs.setCustomermngt();
         cs.setSearchcst("Trung Truong");
         cs.setSearchbtn();
         Thread.sleep(3000);
-        BaseClass BC = new BaseClass();
         BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
 
     }

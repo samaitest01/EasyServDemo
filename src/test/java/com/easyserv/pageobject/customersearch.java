@@ -9,11 +9,11 @@ import java.util.concurrent.TimeUnit;
 
 public class customersearch {
 
-    WebDriver ldriver;
+    WebDriver driver;
 
     public customersearch(WebDriver rdriver) {
-        ldriver = rdriver;
-        PageFactory.initElements(ldriver, this);
+        driver = rdriver;
+        PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = "//a[normalize-space()='Customer Management']")
@@ -24,14 +24,14 @@ public class customersearch {
     WebElement searchbtn;
 
     public void setCustomermngt() {
-        ldriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+       driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         customermngt.click();
 
 
     }
 
     public void setSearchcst(String name) {
-        ldriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         searchcst.sendKeys(name);
     }
 

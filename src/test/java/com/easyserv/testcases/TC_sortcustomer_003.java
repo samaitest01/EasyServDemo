@@ -14,11 +14,6 @@ public class TC_sortcustomer_003 extends BaseClass
         Login lp = new Login(driver);
         BaseClass BC = new BaseClass();
         lp.loginmethod(UserName,Password);
-       /* lp.setTxtemail(UserName);
-        lp.setTxtpwd(Password);
-        lp.setBtnsignin();
-        lp.setStore();
-        lp.setNextbtn();*/
         customersearch cs = new  customersearch(driver);
         cs.setCustomermngt();
         sortcustomer srt = new sortcustomer(driver);
