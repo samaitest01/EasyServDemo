@@ -2,6 +2,7 @@ package com.easyserv.testcases;
 import com.easyserv.pageobject.Login;
 import com.easyserv.pageobject.customersearch;
 import com.easyserv.selenium.BaseClass;
+import org.apache.xmlbeans.impl.xb.xsdschema.Attribute;
 import org.testng.annotations.Test;
 
 public class TC_Customersearch_Test_002 extends BaseClass {
@@ -12,11 +13,12 @@ public class TC_Customersearch_Test_002 extends BaseClass {
         driver.get(URL);
         Login lp = new Login(driver);
         BaseClass BC = new BaseClass();
-        lp.setTxtemail(UserName);
+        lp.loginmethod(UserName,Password);
+        /*lp.setTxtemail(UserName);
         lp.setTxtpwd(Password);
         lp.setBtnsignin();
         lp.setStore();
-        lp.setNextbtn();
+        lp.setNextbtn();*/
     }
     @Test
     public void customersearch() throws InterruptedException {

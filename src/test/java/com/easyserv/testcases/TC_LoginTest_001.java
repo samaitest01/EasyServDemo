@@ -13,12 +13,9 @@ public void loginTest() throws InterruptedException
     driver.get(URL);
     Login lp = new Login(driver);
     BaseClass BC = new BaseClass();
-    lp.setTxtemail(UserName);
-    lp.setTxtpwd(Password);
-    lp.setBtnsignin();
-    lp.setStore();
-    lp.setNextbtn();
-    Thread.sleep(3000);
-    BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
+    lp.loginmethod(UserName,Password);
+    lp.logoutmethod();
+   BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
     }
+
 }

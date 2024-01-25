@@ -1,4 +1,5 @@
 package com.easyserv.selenium;
+import com.easyserv.pageobject.Login;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -13,6 +14,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
     public String URL= "https://osb-admin-staging.siliconstack.com.au/login";
@@ -32,7 +34,7 @@ public class BaseClass {
     public static void exit()
 
     {
-       //driver.quit();
+      driver.quit();
 
     }
     public static void captureScreenshot(WebDriver driver, String methodName) {
@@ -52,6 +54,5 @@ public class BaseClass {
             e.printStackTrace();
         }
     }
-
 
 }

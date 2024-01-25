@@ -13,14 +13,13 @@ import java.security.PublicKey;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class Login
-{
+public class Login {
 
-    WebDriver ldriver;
-    public Login(WebDriver rdriver)
-    {
-      ldriver = rdriver;
-      PageFactory.initElements(ldriver, this);
+    WebDriver driver;
+
+    public Login(WebDriver rdriver) {
+        driver = rdriver;
+        PageFactory.initElements(driver, this);
     }
 
     @FindBy(id = "email")
@@ -35,33 +34,25 @@ public class Login
     WebElement Nextbtn;
     @FindBy(xpath = "//div[contains(text(),'Global')]")
     WebElement GlobalElement;
+    @FindBy(xpath = "//span[@class='ant-avatar ant-avatar-circle']")
+    WebElement LogoutAvatar;
+    @FindBy(xpath = "//div[normalize-space()='Logout']")
+    WebElement logoutbtn;
 
-    public void setTxtemail(String email) {
-        txtemail.sendKeys(email);
-    }
-
-    public void setTxtpwd(String pwd) {
-        txtpwd.sendKeys(pwd);
-
-    }
-
-    public void setBtnsignin(){
-        btnsignin.click();
-    }
-
-
-
-    public void setStore() throws InterruptedException
+    public void loginmethod(String emailID, String password) throws InterruptedException
     {
-        ldriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        txtemail.sendKeys(emailID);
+        txtpwd.sendKeys(password);
+        btnsignin.click();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         dropdownElement.click();
         GlobalElement.click();
+        Nextbtn.click();
 
     }
-      public void setNextbtn ()
-      {
-         Nextbtn.click();
-      }
-
-
+    public void logoutmethod()
+    {
+        LogoutAvatar.click();
+        logoutbtn.click();
     }
+}

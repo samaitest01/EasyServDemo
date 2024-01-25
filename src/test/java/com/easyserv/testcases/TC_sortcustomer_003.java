@@ -13,11 +13,12 @@ public class TC_sortcustomer_003 extends BaseClass
         driver.get(URL);
         Login lp = new Login(driver);
         BaseClass BC = new BaseClass();
-        lp.setTxtemail(UserName);
+        lp.loginmethod(UserName,Password);
+       /* lp.setTxtemail(UserName);
         lp.setTxtpwd(Password);
         lp.setBtnsignin();
         lp.setStore();
-        lp.setNextbtn();
+        lp.setNextbtn();*/
         customersearch cs = new  customersearch(driver);
         cs.setCustomermngt();
         sortcustomer srt = new sortcustomer(driver);
