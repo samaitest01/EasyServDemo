@@ -21,11 +21,12 @@ public class TC_Customersearch_Test_002 extends BaseClass {
     @Test
     public void customersearch() throws InterruptedException {
         customersearch cs = new customersearch(driver);
-         cs.setCustomermngt();
-         cs.setSearchcst("Trung Truong");
-         cs.setSearchbtn();
         Thread.sleep(3000);
-         BaseClass BC = new BaseClass();
+        cs.setCustomermngt();
+        cs.setSearchcst("Trung Truong");
+        cs.setSearchbtn();
+        Thread.sleep(3000);
+        BaseClass BC = new BaseClass();
         BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
 
     }

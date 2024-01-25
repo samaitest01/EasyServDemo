@@ -24,7 +24,7 @@ public class customersearch {
     WebElement searchbtn;
 
     public void setCustomermngt() {
-
+        ldriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         customermngt.click();
 
 
