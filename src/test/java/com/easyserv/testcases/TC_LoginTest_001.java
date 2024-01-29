@@ -11,6 +11,7 @@ public class TC_LoginTest_001 extends BaseClass
 public void loginTest() throws InterruptedException
     {
     driver.get(URL);
+
     Login lp = new Login(driver);
     BaseClass BC = new BaseClass();
     lp.loginmethod(UserName,Password);

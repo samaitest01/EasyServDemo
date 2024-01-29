@@ -46,7 +46,7 @@ public class BaseClass {
             SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMyyyy_HHmmssSSS");
             String timestamp = dateFormat.format(new Date());
 
-            String destinationPath = "C:\\Users\\Austraxpc59\\IdeaProjects\\EasyServDemo\\Screenshots\\" + methodName + "_" + timestamp + ".png";
+            String destinationPath = "C:\\Users\\Austraxpc59\\IdeaProjects\\EasyServDemo\\Utilities\\Screenshots" + methodName + "_" + timestamp + ".png";
             File destination = new File(destinationPath);
             FileUtils.copyFile(source, destination);
             System.out.println("Screenshot captured: " + destinationPath);
