@@ -5,7 +5,7 @@ import com.easyserv.pageobject.Login;
 import com.easyserv.selenium.BaseClass;
 import org.testng.annotations.Test;
 
-public class TC_BookingManagement_calenderView_Test_006 extends BaseClass {
+public class TC_BookingManagement_ListView_Test_006 extends BaseClass {
 
     @Test
     public void calenderview() throws InterruptedException {
