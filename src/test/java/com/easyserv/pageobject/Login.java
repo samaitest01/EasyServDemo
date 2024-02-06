@@ -1,15 +1,10 @@
 package com.easyserv.pageobject;
 
-import org.jsoup.select.Evaluator;
-import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
-import javax.naming.Name;
-import java.security.PublicKey;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class Login {
