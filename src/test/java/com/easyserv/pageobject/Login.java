@@ -36,10 +36,10 @@ public class Login {
 
     public void loginmethod(String emailID, String password) throws InterruptedException
     {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         txtemail.sendKeys(emailID);
         txtpwd.sendKeys(password);
         btnsignin.click();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         dropdownElement.click();
         GlobalElement.click();
         Nextbtn.click();

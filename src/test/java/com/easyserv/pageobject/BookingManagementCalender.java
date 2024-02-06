@@ -17,25 +17,26 @@ public class BookingManagementCalender {
         driver = rdriver;
         PageFactory.initElements(driver, this);
     }
-    @FindBy(xpath = "//a[normalize-space()='Booking Management']")
+    @FindBy(xpath = "//a[normalize-space()='Booking Management']")public
     WebElement Bookingmanagement;
-    @FindBy(xpath = "//button[normalize-space()='day']") WebElement DayView;
-    @FindBy(xpath = "//button[normalize-space()='week']") WebElement WeekView;
-    @FindBy(xpath = "//button[normalize-space()='month']") WebElement MonthView;
-    @FindBy(xpath = "//span[@aria-label='unordered-list']//*[name()='svg']") WebElement Listview;
-    @FindBy(xpath = "//span[@aria-label='filter']") WebElement Filterbutton;
-    @FindBy(xpath = "//div[@data-label='Status']//span[@title='All Status'][normalize-space()='All Status']") WebElement FilterByAll;
-    @FindBy(xpath = "//div[contains(text(),'Booked In')]") WebElement FilterBookedin;
-    @FindBy(xpath = "//div[contains(text(),'Checked In')]") WebElement FilterCheckedIn;
-    @FindBy(xpath = "//div[contains(text(),'Completed')]") WebElement FilterCompleted;
-    @FindBy(xpath = "//div[contains(text(),'Cancelled')]") WebElement FilterCancelled;
-    @FindBy(xpath = "//span[@title='All Status']") WebElement Paymentstatus;
-    @FindBy(xpath = "//div[@class='ant-select-item-option-content'][normalize-space()='Paid']") WebElement PaymentstatusPaid;
-    @FindBy(xpath = "//div[contains(text(),'Not Paid')]") WebElement PaymentstatusNotPaid;
-    @FindBy(xpath = "//div[contains(text(),'Refunded')]") WebElement PaymentstatusRefunded;
-    @FindBy(xpath = "//div[contains(text(),'Partially Refunded')]") WebElement PaymentstatusPartiallyRefunded;
-    @FindBy(xpath = "//span[normalize-space()='Apply']") WebElement ApplyFilter;
-    @FindBy(xpath = "//span[normalize-space()='Clear all']") WebElement FilterClearAll;
+    @FindBy(xpath = "//button[normalize-space()='day']")public WebElement DayView;
+    @FindBy(xpath = "//button[normalize-space()='week']") public WebElement WeekView;
+    @FindBy(xpath = "//button[normalize-space()='month']") public WebElement MonthView;
+    @FindBy(xpath = "//span[@aria-label='unordered-list']//*[name()='svg']")
+    public WebElement Listview;
+    @FindBy(xpath = "//span[@aria-label='filter']") public WebElement Filterbutton;
+    @FindBy(xpath = "//div[@data-label='Status']//span[@title='All Status'][normalize-space()='All Status']")public WebElement FilterByAll;
+    @FindBy(xpath = "//div[contains(text(),'Booked In')]") public WebElement FilterBookedin;
+    @FindBy(xpath = "//div[contains(text(),'Checked In')]") public WebElement FilterCheckedIn;
+    @FindBy(xpath = "//div[contains(text(),'Completed')]") public WebElement FilterCompleted;
+    @FindBy(xpath = "//div[contains(text(),'Cancelled')]") public  WebElement FilterCancelled;
+    @FindBy(xpath = "//span[@title='All Status']") public  WebElement Paymentstatus;
+    @FindBy(xpath = "//div[@class='ant-select-item-option-content'][normalize-space()='Paid']") public  WebElement PaymentstatusPaid;
+    @FindBy(xpath = "//div[contains(text(),'Not Paid')]") public  WebElement PaymentstatusNotPaid;
+    @FindBy(xpath = "//div[contains(text(),'Refunded')]") public  WebElement PaymentstatusRefunded;
+    @FindBy(xpath = "//div[contains(text(),'Partially Refunded')]") public  WebElement PaymentstatusPartiallyRefunded;
+    @FindBy(xpath = "//span[normalize-space()='Apply']") public  WebElement ApplyFilter;
+    @FindBy(xpath = "//span[normalize-space()='Clear all']") public  WebElement FilterClearAll;
 
 
     public void ClickBookingManagement() throws InterruptedException {
