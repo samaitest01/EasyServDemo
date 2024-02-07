@@ -81,4 +81,8 @@ public class functions extends BookingManagementCalender{
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         PaymentstatusPartiallyRefunded.click();
     }
+    public void ClickBookingManagement() throws InterruptedException {
+        Bookingmanagement.click();
+        Thread.sleep(3000);
+    }
 }

@@ -16,7 +16,6 @@ public class TC_BookingManagement_Filter_Test_007 extends BaseClass {
         LP.loginmethod(UserName, Password);
         BookingManagementCalender BM = new BookingManagementCalender(driver);
         functions fn = new functions(driver);
-
         fn.ClickBookingManagement();
         fn.setlistview();
         fn.setFilterbutton();

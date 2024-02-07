@@ -38,7 +38,7 @@ public class BookingManagementCalender {
     @FindBy(xpath = "//span[normalize-space()='Apply']") public  WebElement ApplyFilter;
     @FindBy(xpath = "//span[normalize-space()='Clear all']") public  WebElement FilterClearAll;
 
-
+/*
     public void ClickBookingManagement() throws InterruptedException {
         Bookingmanagement.click();
         Thread.sleep(3000);
@@ -124,7 +124,7 @@ public class BookingManagementCalender {
     {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         PaymentstatusPartiallyRefunded.click();
-    }
+    }*/
 
 
 

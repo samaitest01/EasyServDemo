@@ -9,7 +9,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
