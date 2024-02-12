@@ -1,5 +1,6 @@
 package com.easyserv.testcases;
 
+import com.easyserv.functions.Loginfunction;
 import com.easyserv.pageobject.Login;
 import com.easyserv.selenium.BaseClass;
 import org.testng.annotations.Test;
@@ -11,11 +12,10 @@ public class TC_LoginTest_001 extends BaseClass
 public void loginTest() throws InterruptedException
     {
     driver.get(URL);
-
-    Login lp = new Login(driver);
+    Loginfunction LF = new Loginfunction(driver);
     BaseClass BC = new BaseClass();
-    lp.loginmethod(UserName,Password);
-    lp.logoutmethod();
+    LF.loginmethod(UserName,Password);
+    LF.logoutmethod();
    BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
     }
 

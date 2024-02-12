@@ -1,5 +1,6 @@
 package com.easyserv.testcases;
 
+import com.easyserv.functions.Bookingcalenderfunction;
 import com.easyserv.pageobject.BookingManagementCalender;
 import com.easyserv.pageobject.Login;
 import com.easyserv.selenium.BaseClass;
@@ -13,7 +14,7 @@ public class TC_BookingManagement_ListView_Test_006 extends BaseClass {
         BaseClass BC = new BaseClass();
         Login LP = new Login(driver);
         LP.loginmethod(UserName,Password);
-        BookingManagementCalender BM = new BookingManagementCalender(driver);
+        Bookingcalenderfunction BM = new Bookingcalenderfunction(driver);
         BM.ClickBookingManagement();
         BM.setlistview();
         BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());

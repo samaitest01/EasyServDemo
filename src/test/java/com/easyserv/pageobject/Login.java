@@ -20,21 +20,21 @@ public class Login {
     }
 
     @FindBy(id = "email")
-    WebElement txtemail;
+    public WebElement txtemail;
     @FindBy(id = "password")
-    WebElement txtpwd;
+    public WebElement txtpwd;
     @FindBy(xpath = "//button[@type='submit']")
-    WebElement btnsignin;
+    public WebElement btnsignin;
     @FindBy(xpath = "//input[@id='serviceCentre']")
-    WebElement dropdownElement;
+    public WebElement dropdownElement;
     @FindBy(xpath = "//button[@type='submit']")
-    WebElement Nextbtn;
+    public WebElement Nextbtn;
     @FindBy(xpath = "//div[contains(text(),'Global')]")
-    WebElement GlobalElement;
+    public WebElement GlobalElement;
     @FindBy(xpath = "//span[@class='ant-avatar ant-avatar-circle']")
-    WebElement LogoutAvatar;
+    public WebElement LogoutAvatar;
     @FindBy(xpath = "//div[normalize-space()='Logout']")
-    WebElement logoutbtn;
+    public WebElement logoutbtn;
 
     public void loginmethod(String emailID, String password) throws InterruptedException
     {
