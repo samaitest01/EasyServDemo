@@ -1,4 +1,5 @@
 package com.easyserv.testcases;
+import com.easyserv.functions.Loginfunction;
 import com.easyserv.pageobject.Login;
 import com.easyserv.pageobject.customersearch;
 import com.easyserv.pageobject.sortcustomer;
@@ -11,7 +12,7 @@ public class TC_sortcustomer_003 extends BaseClass
     public void sortcustomer()throws InterruptedException
     {
         driver.get(URL);
-        Login lp = new Login(driver);
+        Loginfunction lp = new Loginfunction(driver);
         BaseClass BC = new BaseClass();
         lp.loginmethod(UserName,Password);
         customersearch cs = new  customersearch(driver);

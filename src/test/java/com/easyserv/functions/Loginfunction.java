@@ -2,8 +2,11 @@ package com.easyserv.functions;
 
 import com.easyserv.pageobject.Login;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
 public class Loginfunction extends Login {
     WebDriver driver;
@@ -13,7 +16,6 @@ public class Loginfunction extends Login {
 
     public void loginmethod(String emailID, String password) throws InterruptedException
     {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         txtemail.sendKeys(emailID);
         txtpwd.sendKeys(password);
         btnsignin.click();
@@ -22,9 +24,12 @@ public class Loginfunction extends Login {
         Nextbtn.click();
 
     }
-    public void logoutmethod()
-    {
+    public void logoutmethod() throws InterruptedException {
+        Thread.sleep(3000);
         LogoutAvatar.click();
+        Thread.sleep(3000);
         logoutbtn.click();
     }
+
+
 }

@@ -1,4 +1,5 @@
 package com.easyserv.testcases;
+import com.easyserv.functions.Loginfunction;
 import com.easyserv.pageobject.Login;
 import com.easyserv.pageobject.customersearch;
 import com.easyserv.selenium.BaseClass;
@@ -10,7 +11,7 @@ public class TC_Customersearch_Test_002 extends BaseClass {
     @Test
     public void customersearch() throws InterruptedException {
         driver.get(URL);
-        Login lp = new Login(driver);
+        Loginfunction lp = new Loginfunction(driver);
         BaseClass BC = new BaseClass();
         lp.loginmethod(UserName,Password);
         customersearch cs = new customersearch(driver);
@@ -21,5 +22,7 @@ public class TC_Customersearch_Test_002 extends BaseClass {
         BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
 
     }
+
+
 
 }

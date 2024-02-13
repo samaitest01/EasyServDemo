@@ -36,20 +36,5 @@ public class Login {
     @FindBy(xpath = "//div[normalize-space()='Logout']")
     public WebElement logoutbtn;
 
-    public void loginmethod(String emailID, String password) throws InterruptedException
-    {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        txtemail.sendKeys(emailID);
-        txtpwd.sendKeys(password);
-        btnsignin.click();
-        dropdownElement.click();
-        GlobalElement.click();
-        Nextbtn.click();
-
-    }
-    public void logoutmethod()
-    {
-        LogoutAvatar.click();
-        logoutbtn.click();
-    }
 }
+

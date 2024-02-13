@@ -1,5 +1,6 @@
 package com.easyserv.testcases;
 
+import com.easyserv.functions.Loginfunction;
 import com.easyserv.functions.functions;
 import com.easyserv.pageobject.BookingManagementCalender;
 import com.easyserv.pageobject.Login;
@@ -12,7 +13,7 @@ public class TC_BookingManagement_Filter_Test_007 extends BaseClass {
     public void Filterbookingview() throws InterruptedException {
         driver.get(URL);
         BaseClass BC = new BaseClass();
-        Login LP = new Login(driver);
+        Loginfunction LP = new Loginfunction(driver);
         LP.loginmethod(UserName, Password);
         BookingManagementCalender BM = new BookingManagementCalender(driver);
         functions fn = new functions(driver);

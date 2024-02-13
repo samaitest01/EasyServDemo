@@ -15,16 +15,18 @@ public class sortcustomer {
     {
         driver = rdriver;
         PageFactory.initElements(driver, this);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     @FindBy(xpath = "//span[normalize-space()='Customer Name']")WebElement sortbyname;
     @FindBy(xpath = "//span[normalize-space()='Phone Number']") WebElement sortbyphone;
     @FindBy(xpath = "//span[normalize-space()='Email']")WebElement getSortbyemail;
 
-    public void setSortbyname()
-    {sortbyname.click();}
-    public void setSortbyphone()
-    {sortbyphone.click();}
-    public void setGetSortbyemail()
-    {getSortbyemail.click();}
+    public void setSortbyname()    {
+        sortbyname.click();
+    }
+    public void setSortbyphone(){
+        sortbyphone.click();
+    }
+    public void setGetSortbyemail() {
+        getSortbyemail.click();
+    }
 }

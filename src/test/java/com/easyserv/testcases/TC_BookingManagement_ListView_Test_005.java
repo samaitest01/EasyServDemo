@@ -1,6 +1,7 @@
 package com.easyserv.testcases;
 
 import com.easyserv.functions.Bookingcalenderfunction;
+import com.easyserv.functions.Loginfunction;
 import com.easyserv.pageobject.BookingManagementCalender;
 import com.easyserv.pageobject.Login;
 import com.easyserv.selenium.BaseClass;
@@ -12,7 +13,7 @@ public class TC_BookingManagement_ListView_Test_005 extends BaseClass {
     public void bookingmanagement()throws InterruptedException
     {
         driver.get(URL);
-        Login lp = new Login(driver);
+        Loginfunction lp = new Loginfunction(driver);
         BaseClass BC = new BaseClass();
         lp.loginmethod(UserName,Password);
         Bookingcalenderfunction BM = new Bookingcalenderfunction(driver);

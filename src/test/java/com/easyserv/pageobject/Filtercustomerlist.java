@@ -31,16 +31,13 @@ public class Filtercustomerlist {
     @FindBy(xpath = "//span[normalize-space()='Apply']")WebElement ApplyFilter;
 
     public void setFilterActive() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        //Thread.sleep(3000);
+
         Filterlabel.click();
-        //Thread.sleep(3000);
         statusdropdown.click();
         FilterActive.click();
     }
     public void setFilterInActive() throws InterruptedException {
-       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        //Thread.sleep(3000);
+
        Filterlabel.click();
        statusdropdown.click();
        FilterInActive.click();

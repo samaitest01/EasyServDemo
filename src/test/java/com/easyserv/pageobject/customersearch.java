@@ -24,18 +24,15 @@ public class customersearch {
     WebElement searchbtn;
 
     public void setCustomermngt() {
-       driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         customermngt.click();
-
-
     }
 
     public void setSearchcst(String name) {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         searchcst.sendKeys(name);
     }
 
     public void setSearchbtn() {
+
         searchbtn.click();
     }
 

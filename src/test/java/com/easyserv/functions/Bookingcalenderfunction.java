@@ -2,6 +2,7 @@ package com.easyserv.functions;
 import com.easyserv.pageobject.BookingManagementCalender;
 import org.openqa.selenium.WebDriver;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class Bookingcalenderfunction extends BookingManagementCalender{
@@ -31,7 +32,7 @@ public class Bookingcalenderfunction extends BookingManagementCalender{
     }
     public void SetFilterCheckedIn()
     {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         FilterCheckedIn.click();
     }
     public void SetFilterCompleted()

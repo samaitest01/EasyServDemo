@@ -1,4 +1,6 @@
 package com.easyserv.selenium;
+import com.aventstack.extentreports.reporter.ExtentReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.easyserv.pageobject.Login;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -12,6 +14,7 @@ import org.testng.annotations.BeforeClass;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -28,6 +31,7 @@ public class BaseClass {
         ChromeOptions options = new ChromeOptions();
         driver = new ChromeDriver();
          driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
     @AfterClass
     public static void exit()
@@ -53,5 +57,9 @@ public class BaseClass {
             e.printStackTrace();
         }
     }
+
+
+
+
 
 }
