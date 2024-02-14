@@ -1,7 +1,11 @@
 package com.easyserv.selenium;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentReporter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.easyserv.pageobject.Login;
+import com.easyserv.pageobject.UpdateReports;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -19,28 +23,38 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
+     public ExtentSparkReporter spark;
+    public ExtentTest Parent;
+    public ExtentTest test;
+    public  ExtentReports reports;
     public String URL= "https://osb-admin-staging.siliconstack.com.au/login";
     public String UserName = "admin1@example.com";
     public String Password = "12345678";
-    public static WebDriver driver;
-
+    public  WebDriver driver;
+    public  String fileDestination = "C:\\Users\\Austraxpc59\\IdeaProjects\\EasyServDemo\\Utilities";
+UpdateReports updateReports = new UpdateReports();
+  public  String REPORT_PATH = fileDestination+"\\ExtentReport\\extent.html";
     @BeforeClass
-    public static void Setup()
+    public void Setup()
 
     {
         ChromeOptions options = new ChromeOptions();
         driver = new ChromeDriver();
          driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        extentReportCreating();
+
+
+
     }
     @AfterClass
-    public static void exit()
-
+    public void exit()
     {
+     reports.flush();
      driver.quit();
 
     }
-    public static void captureScreenshot(WebDriver driver, String methodName) {
+    public  void captureScreenshot(WebDriver driver, String methodName) {
         try {
             TakesScreenshot ts = (TakesScreenshot) driver;
             File source = ts.getScreenshotAs(OutputType.FILE);
@@ -49,7 +63,7 @@ public class BaseClass {
             SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMyyyy_HHmmssSSS");
             String timestamp = dateFormat.format(new Date());
 
-            String destinationPath = "C:\\Users\\Austraxpc59\\IdeaProjects\\EasyServDemo\\Utilities\\Screenshots\\" + methodName + "_" + timestamp + ".png";
+           String destinationPath = fileDestination+"\\Screenshots\\" + methodName + "_" + timestamp + ".png";
             File destination = new File(destinationPath);
             FileUtils.copyFile(source, destination);
             System.out.println("Screenshot captured: " + destinationPath);
@@ -58,7 +72,21 @@ public class BaseClass {
         }
     }
 
+public void extentReportCreating(){
+    reports = new ExtentReports();
+    spark = new ExtentSparkReporter(REPORT_PATH);
+    reports.attachReporter(spark);
+    spark.config().setReportName(new Object(){}.getClass().getEnclosingMethod().getName());
+    spark.config().setDocumentTitle(new Object(){}.getClass().getEnclosingMethod().getName());
+    spark.config().setTheme(Theme.STANDARD);
+    reports.setSystemInfo("Project Name", "EasyServ");
+    reports.setSystemInfo("Device OS", System.getProperty("os.name"));
+    reports.setSystemInfo("System OS", System.getProperty("os.name") + "@" + System.getProperty("os.version") + "@"
+            + System.getProperty("os.arch"));
+    Parent= reports.createTest("Test Login");
+    test =Parent.createNode("Test");
 
+}
 
 
 
