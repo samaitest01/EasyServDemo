@@ -19,7 +19,7 @@ public class TC_BookingManagement_ListView_Test_005 extends BaseClass {
         Bookingcalenderfunction BM = new Bookingcalenderfunction(driver);
         BM.ClickBookingManagement();
         BM.setChangeView();
-        BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
+       // BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
 
     }
 

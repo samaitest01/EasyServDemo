@@ -14,7 +14,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -34,7 +37,7 @@ public class BaseClass {
     public  String fileDestination = "C:\\Users\\Austraxpc59\\IdeaProjects\\EasyServDemo\\Utilities";
 UpdateReports updateReports = new UpdateReports();
   public  String REPORT_PATH = fileDestination+"\\ExtentReport\\extent.html";
-    @BeforeClass
+    @BeforeTest
     public void Setup()
 
     {
@@ -47,7 +50,7 @@ UpdateReports updateReports = new UpdateReports();
 
 
     }
-    @AfterClass
+    @AfterTest
     public void exit()
     {
      reports.flush();

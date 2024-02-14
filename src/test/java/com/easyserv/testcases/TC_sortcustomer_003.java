@@ -22,7 +22,7 @@ public class TC_sortcustomer_003 extends BaseClass
         srt.setGetSortbyemail();
         srt.setSortbyname();
         Thread.sleep(3000);
-        BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
+      //  BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
 
     }
 

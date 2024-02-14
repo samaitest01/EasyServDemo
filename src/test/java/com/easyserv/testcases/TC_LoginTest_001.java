@@ -21,7 +21,7 @@ boolean testCaseStatus=false;
             BaseClass BC = new BaseClass();
             LF.loginmethod(UserName, Password);
             testCaseStatus= LF.logoutmethod();
-            BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
+           // BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
             if (testCaseStatus){
                 test.pass("Step Passed --> : " + "Description" + " " + new Object(){}.getClass().getEnclosingMethod().getName());
 

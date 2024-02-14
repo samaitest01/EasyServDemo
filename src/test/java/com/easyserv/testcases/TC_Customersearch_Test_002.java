@@ -19,7 +19,7 @@ public class TC_Customersearch_Test_002 extends BaseClass {
         cs.setSearchcst("Trung Truong");
         cs.setSearchbtn();
         Thread.sleep(3000);
-        BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
+       // BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
 
     }
 
