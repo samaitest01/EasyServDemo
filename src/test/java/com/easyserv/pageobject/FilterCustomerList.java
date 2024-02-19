@@ -19,33 +19,18 @@ public class FilterCustomerList {
     }
 
     @FindBy(xpath = "//button[@class='ant-btn ant-btn-default ant-btn-lg ant-btn-icon-only']")
-    WebElement FilterIcon;
+    public WebElement FilterIcon;
 
     @FindBy(xpath = "//span[@aria-label='filter']")
-    WebElement FilterLabel;
+    public WebElement FilterLabel;
     @FindBy(xpath = "//span[@title='All']")
-    WebElement StatusDropdown;
+    public WebElement StatusDropdown;
     @FindBy(xpath = "//div[contains(text(),'Active')]")
-    WebElement FilterActive;
+    public WebElement FilterActive;
     @FindBy(xpath = "//div[contains(text(),'Inactive')]")
-    WebElement FilterInActive;
+    public WebElement FilterInActive;
     @FindBy(xpath = "//span[normalize-space()='Apply']")
-    WebElement ApplyFilter;
+    public WebElement ApplyFilter;
 
-    public void setFilterActive() throws InterruptedException {
-
-        FilterLabel.click();
-        StatusDropdown.click();
-        FilterActive.click();
-    }
-
-    public void setFilterInActive() throws InterruptedException {
-
-        FilterLabel.click();
-        StatusDropdown.click();
-        FilterInActive.click();
-        ApplyFilter.click();
-
-    }
 
 }

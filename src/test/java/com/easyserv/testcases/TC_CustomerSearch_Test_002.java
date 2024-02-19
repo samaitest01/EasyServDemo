@@ -12,7 +12,7 @@ public class TC_CustomerSearch_Test_002 extends BaseClass {
         driver.get(URL);
         LoginFunction LoginObject = new LoginFunction(driver);
         BaseClass BC = new BaseClass();
-        LoginObject.LoginObject(UserName, Password);
+        LoginObject.LoginMethod(UserName, Password);
         CustomerSearchFunction cs = new CustomerSearchFunction(driver);
         cs.setCustomerManagement();
         cs.setSearchCustomer("Trung Truong");

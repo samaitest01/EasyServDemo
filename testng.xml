@@ -13,7 +13,32 @@
 
                 </methods>
             </class>
+            <class name="com.easyserv.testcases.TC_SortCustomer_003">
+                <methods>
 
-        </classes>
+                </methods>
+            </class>
+            <class name="com.easyserv.testcases.TC_FilterCustomer_Test_004">
+                <methods>
+
+                </methods>
+            </class>
+            <class name="com.easyserv.testcases.TC_BookingManagement_ListView_Test_005">
+                <methods>
+
+                </methods>
+            </class>
+            <class name="com.easyserv.testcases.TC_BookingManagement_ListView_Test_006">
+                <methods>
+
+                </methods>
+            </class>
+            <class name="com.easyserv.testcases.TC_BookingManagement_Filter_Test_007">
+                <methods>
+
+                </methods>
+            </class>
+
+            </classes>
     </test>
 </suite>

@@ -14,7 +14,7 @@ public class TC_LoginTest_001 extends BaseClass {
 
         driver.get(URL);
         LoginFunction LoginPage = new LoginFunction(driver);
-        LoginPage.LoginObject(UserName, Password);
+        LoginPage.LoginMethod(UserName, Password);
         testCaseStatus = LoginPage.logoutmethod();
         // BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
         if (testCaseStatus) {

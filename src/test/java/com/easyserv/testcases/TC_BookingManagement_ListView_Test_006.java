@@ -12,7 +12,7 @@ public class TC_BookingManagement_ListView_Test_006 extends BaseClass {
         driver.get(URL);
         BaseClass BC = new BaseClass();
         LoginFunction LoginObject = new LoginFunction(driver);
-        LoginObject.LoginObject(UserName, Password);
+        LoginObject.LoginMethod(UserName, Password);
         BookingCalenderFunction BM = new BookingCalenderFunction(driver);
         BM.ClickBookingManagement();
         BM.setlistview();

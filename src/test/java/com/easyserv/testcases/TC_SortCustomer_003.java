@@ -11,7 +11,7 @@ public class TC_SortCustomer_003 extends BaseClass {
     public void SortCustomer() throws InterruptedException {
         driver.get(URL);
         LoginFunction LoginObject = new LoginFunction(driver);
-        LoginObject.LoginObject(UserName, Password);
+        LoginObject.LoginMethod(UserName, Password);
         CustomerSearchFunction CustomerSearch = new CustomerSearchFunction(driver);
         CustomerSearch.setCustomerManagement();
         SortCustomerFunction SortCustomer = new SortCustomerFunction(driver);

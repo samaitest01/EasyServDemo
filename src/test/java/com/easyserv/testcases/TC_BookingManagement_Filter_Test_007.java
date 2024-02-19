@@ -12,7 +12,7 @@ public class TC_BookingManagement_Filter_Test_007 extends BaseClass {
     public void Filterbookingview() throws InterruptedException {
         driver.get(URL);
         LoginFunction LoginObject = new LoginFunction(driver);
-        LoginObject.LoginObject(UserName, Password);
+        LoginObject.LoginMethod(UserName, Password);
         BookingManagementCalender BM = new BookingManagementCalender(driver);
         Functions fn = new Functions(driver);
         fn.ClickBookingManagement();
