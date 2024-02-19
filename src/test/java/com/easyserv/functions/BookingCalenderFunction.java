@@ -88,11 +88,11 @@ public class BookingCalenderFunction extends BookingCalender {
 
         Thread.sleep(3000);
         BookingManagement.click();
-
+        Thread.sleep(3000);
         DayView.click();
-
+        Thread.sleep(3000);
         WeekView.click();
-
+        Thread.sleep(3000);
         MonthView.click();
 
     }
