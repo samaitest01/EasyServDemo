@@ -1,13 +1,17 @@
 package com.easyserv.functions;
+
 import com.easyserv.pageobject.BookingManagementCalender;
 import org.openqa.selenium.WebDriver;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-public class Bookingcalenderfunction extends BookingManagementCalender{
+public class Bookingcalenderfunction extends BookingManagementCalender {
     WebDriver driver;
-    public Bookingcalenderfunction(WebDriver rdriver) {super(rdriver); }
+
+    public Bookingcalenderfunction(WebDriver rdriver) {
+        super(rdriver);
+    }
 
     public void setlistview() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -15,75 +19,73 @@ public class Bookingcalenderfunction extends BookingManagementCalender{
         Thread.sleep(3000);
 
     }
-    public void setFilterbutton()
-    {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+    public void setFilterbutton() {
         Filterbutton.click();
     }
-    public void SetFilterAll()
-    {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+    public void SetFilterAll() {
         FilterByAll.click();
     }
-    public void SetFilterBookedin()
-    {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+    public void SetFilterBookedin() {
+
         FilterBookedin.click();
     }
-    public void SetFilterCheckedIn()
-    {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
+    public void SetFilterCheckedIn() {
         FilterCheckedIn.click();
     }
-    public void SetFilterCompleted()
-    {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+    public void SetFilterCompleted() {
+
         FilterCompleted.click();
     }
-    public void SetFiltercancelled()
-    {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+    public void SetFiltercancelled() {
+
         FilterCancelled.click();
     }
-    public void SetApplyFilter()
-    {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+    public void SetApplyFilter() {
+
         ApplyFilter.click();
     }
-    public void SetClearAll()
-    {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+    public void SetClearAll() {
+
         FilterClearAll.click();
     }
-    public void Setpaymentstatus()
-    {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+    public void Setpaymentstatus() {
+
         Paymentstatus.click();
     }
-    public void SetPaymentstatuspaid()
-    {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+    public void SetPaymentstatuspaid() {
+
         PaymentstatusPaid.click();
     }
-    public void SetPaymentstatusnotpaid()
-    {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+    public void SetPaymentstatusnotpaid() {
+
         PaymentstatusNotPaid.click();
     }
-    public void SetPaymentstatusrefunded()
-    {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+    public void SetPaymentstatusrefunded() {
+
         PaymentstatusRefunded.click();
     }
-    public void SetPaymentstatuspartialrefunded()
-    {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+    public void SetPaymentstatuspartialrefunded() {
         PaymentstatusPartiallyRefunded.click();
     }
+
     public void ClickBookingManagement() throws InterruptedException {
         Bookingmanagement.click();
         Thread.sleep(3000);
     }
+
     public void setChangeView() throws InterruptedException {
         Bookingmanagement.click();
         Thread.sleep(3000);
@@ -94,10 +96,6 @@ public class Bookingcalenderfunction extends BookingManagementCalender{
         MonthView.click();
         Thread.sleep(3000);
     }
-
-
-
-
 
 
 }

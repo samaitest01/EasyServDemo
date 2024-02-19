@@ -16,7 +16,7 @@ public class TC_filtercustomer_Test_004 extends BaseClass {
         customersearch cs = new customersearch(driver);
         Filtercustomerlist FC = new Filtercustomerlist(driver);
         BaseClass BC = new BaseClass();
-        lp.loginmethod(UserName,Password);
+        lp.loginmethod(UserName, Password);
         cs.setCustomermngt();
         FC.setFilterActive();
 

@@ -10,16 +10,15 @@ import org.testng.annotations.Test;
 public class TC_BookingManagement_ListView_Test_005 extends BaseClass {
 
     @Test
-    public void bookingmanagement()throws InterruptedException
-    {
+    public void bookingmanagement() throws InterruptedException {
         driver.get(URL);
         Loginfunction lp = new Loginfunction(driver);
         BaseClass BC = new BaseClass();
-        lp.loginmethod(UserName,Password);
+        lp.loginmethod(UserName, Password);
         Bookingcalenderfunction BM = new Bookingcalenderfunction(driver);
         BM.ClickBookingManagement();
         BM.setChangeView();
-       // BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
+        // BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
 
     }
 

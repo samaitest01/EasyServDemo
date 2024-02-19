@@ -11,21 +11,26 @@ public class sortcustomer {
 
     WebDriver driver;
 
-    public sortcustomer(WebDriver rdriver)
-    {
+    public sortcustomer(WebDriver rdriver) {
         driver = rdriver;
         PageFactory.initElements(driver, this);
     }
-    @FindBy(xpath = "//span[normalize-space()='Customer Name']")WebElement sortbyname;
-    @FindBy(xpath = "//span[normalize-space()='Phone Number']") WebElement sortbyphone;
-    @FindBy(xpath = "//span[normalize-space()='Email']")WebElement getSortbyemail;
 
-    public void setSortbyname()    {
+    @FindBy(xpath = "//span[normalize-space()='Customer Name']")
+    WebElement sortbyname;
+    @FindBy(xpath = "//span[normalize-space()='Phone Number']")
+    WebElement sortbyphone;
+    @FindBy(xpath = "//span[normalize-space()='Email']")
+    WebElement getSortbyemail;
+
+    public void setSortbyname() {
         sortbyname.click();
     }
-    public void setSortbyphone(){
+
+    public void setSortbyphone() {
         sortbyphone.click();
     }
+
     public void setGetSortbyemail() {
         getSortbyemail.click();
     }

@@ -1,4 +1,5 @@
 package com.easyserv.testcases;
+
 import com.easyserv.functions.Loginfunction;
 import com.easyserv.pageobject.Login;
 import com.easyserv.pageobject.customersearch;
@@ -13,16 +14,15 @@ public class TC_Customersearch_Test_002 extends BaseClass {
         driver.get(URL);
         Loginfunction lp = new Loginfunction(driver);
         BaseClass BC = new BaseClass();
-        lp.loginmethod(UserName,Password);
+        lp.loginmethod(UserName, Password);
         customersearch cs = new customersearch(driver);
         cs.setCustomermngt();
         cs.setSearchcst("Trung Truong");
         cs.setSearchbtn();
         Thread.sleep(3000);
-       // BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
+        // BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
 
     }
-
 
 
 }

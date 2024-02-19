@@ -22,6 +22,7 @@ public class TC_BookingManagement_Filter_Test_007 extends BaseClass {
         fn.setFilterbutton();
         fn.SetFilterAll();
 
-        BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
+        BC.captureScreenshot(driver, new Object() {
+        }.getClass().getEnclosingMethod().getName());
     }
 }
