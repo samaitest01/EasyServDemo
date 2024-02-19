@@ -17,24 +17,13 @@ public class customersearch {
     }
 
     @FindBy(xpath = "//a[normalize-space()='Customer Management']")
-    WebElement customermngt;
+    public WebElement customermngt;
     @FindBy(xpath = "//input[@placeholder='Search']")
-    WebElement searchcst;
+    public WebElement searchcst;
     @FindBy(xpath = "//button[@class='ant-btn ant-btn-default ant-btn-icon-only ant-input-search-button']")
-    WebElement searchbtn;
+    public WebElement searchbtn;
 
-    public void setCustomermngt() {
-        customermngt.click();
-    }
 
-    public void setSearchcst(String name) {
-        searchcst.sendKeys(name);
-    }
-
-    public void setSearchbtn() {
-
-        searchbtn.click();
-    }
 
 }
 

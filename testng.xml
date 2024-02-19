@@ -8,6 +8,11 @@
                     <include name="loginTest"/>
                 </methods>
             </class>
+            <class name="com.easyserv.testcases.TC_Customersearch_Test_002">
+                <methods>
+                 <include name="customersearch"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

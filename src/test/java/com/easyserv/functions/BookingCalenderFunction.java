@@ -3,13 +3,12 @@ package com.easyserv.functions;
 import com.easyserv.pageobject.BookingManagementCalender;
 import org.openqa.selenium.WebDriver;
 
-import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-public class Bookingcalenderfunction extends BookingManagementCalender {
+public class BookingCalenderFunction extends BookingManagementCalender {
     WebDriver driver;
 
-    public Bookingcalenderfunction(WebDriver rdriver) {
+    public BookingCalenderFunction(WebDriver rdriver) {
         super(rdriver);
     }
 
@@ -20,7 +19,7 @@ public class Bookingcalenderfunction extends BookingManagementCalender {
 
     }
 
-    public void setFilterbutton() {
+    public void setFilterButton() {
         Filterbutton.click();
     }
 
@@ -42,7 +41,7 @@ public class Bookingcalenderfunction extends BookingManagementCalender {
         FilterCompleted.click();
     }
 
-    public void SetFiltercancelled() {
+    public void SetFilterCancelled() {
 
         FilterCancelled.click();
     }
@@ -57,44 +56,44 @@ public class Bookingcalenderfunction extends BookingManagementCalender {
         FilterClearAll.click();
     }
 
-    public void Setpaymentstatus() {
+    public void SetPaymentStatus() {
 
         Paymentstatus.click();
     }
 
-    public void SetPaymentstatuspaid() {
+    public void SetPaymentStatusPaid() {
 
         PaymentstatusPaid.click();
     }
 
-    public void SetPaymentstatusnotpaid() {
+    public void SetPaymentStatusnotPaid() {
 
         PaymentstatusNotPaid.click();
     }
 
-    public void SetPaymentstatusrefunded() {
+    public void SetPaymentStatusRefunded() {
 
         PaymentstatusRefunded.click();
     }
 
-    public void SetPaymentstatuspartialrefunded() {
+    public void SetPaymentStatusPartialRefunded() {
         PaymentstatusPartiallyRefunded.click();
     }
 
     public void ClickBookingManagement() throws InterruptedException {
         Bookingmanagement.click();
-        Thread.sleep(3000);
+
     }
 
     public void setChangeView() throws InterruptedException {
         Bookingmanagement.click();
-        Thread.sleep(3000);
+
         DayView.click();
-        Thread.sleep(3000);
+
         WeekView.click();
-        Thread.sleep(3000);
+
         MonthView.click();
-        Thread.sleep(3000);
+
     }
 
 

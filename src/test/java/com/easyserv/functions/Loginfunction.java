@@ -11,7 +11,7 @@ public class Loginfunction extends Login {
         super(rdriver);
     }
 
-    public void loginmethod(String emailID, String password) throws InterruptedException {
+    public void LoginMethod(String emailID, String password) throws InterruptedException {
         try {
             txtemail.sendKeys(emailID);
             txtpwd.sendKeys(password);

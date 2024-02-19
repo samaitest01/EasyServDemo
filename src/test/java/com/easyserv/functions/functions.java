@@ -15,7 +15,7 @@ public class functions extends BookingManagementCalender {
     public void setlistview() throws InterruptedException {
 
         Listview.click();
-        Thread.sleep(3000);
+
 
     }
 

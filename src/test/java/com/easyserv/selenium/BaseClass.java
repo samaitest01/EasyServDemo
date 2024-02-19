@@ -39,7 +39,7 @@ public class BaseClass {
     UpdateReports updateReports = new UpdateReports();
     public String REPORT_PATH = fileDestination + "\\ExtentReport\\extent.html";
 
-    @BeforeTest
+    @BeforeClass
     public void Setup() {
         ChromeOptions options = new ChromeOptions();
         driver = new ChromeDriver();
