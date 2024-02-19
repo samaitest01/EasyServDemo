@@ -10,13 +10,13 @@ public class TC_CustomerSearch_Test_002 extends BaseClass {
     @Test
     public void customersearch() throws InterruptedException {
         driver.get(URL);
-        LoginFunction lp = new LoginFunction(driver);
+        LoginFunction LoginObject = new LoginFunction(driver);
         BaseClass BC = new BaseClass();
-        lp.LoginMethod(UserName, Password);
+        LoginObject.LoginObject(UserName, Password);
         CustomerSearchFunction cs = new CustomerSearchFunction(driver);
-        cs.setCustomerMngt();
-        cs.setSearchCst("Trung Truong");
-        cs.setSearchBtn();
+        cs.setCustomerManagement();
+        cs.setSearchCustomer("Trung Truong");
+        cs.setSearchButton();
 
         // BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
 

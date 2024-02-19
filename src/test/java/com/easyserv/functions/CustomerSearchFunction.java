@@ -10,15 +10,15 @@ public class CustomerSearchFunction extends CustomerSearch {
         super(rdriver);
     }
 
-    public void setCustomerMngt() {
+    public void setCustomerManagement() {
         CustomerManagement.click();
     }
 
-    public void setSearchCst(String name) {
+    public void setSearchCustomer(String name) {
         SearchCustomer.sendKeys(name);
     }
 
-    public void setSearchBtn() {
+    public void setSearchButton() {
 
         SearchButton.click();
     }

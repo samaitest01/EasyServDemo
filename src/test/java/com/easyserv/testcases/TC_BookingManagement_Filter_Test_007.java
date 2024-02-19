@@ -11,17 +11,14 @@ public class TC_BookingManagement_Filter_Test_007 extends BaseClass {
     @Test
     public void Filterbookingview() throws InterruptedException {
         driver.get(URL);
-        BaseClass BC = new BaseClass();
-        LoginFunction LP = new LoginFunction(driver);
-        LP.LoginMethod(UserName, Password);
+        LoginFunction LoginObject = new LoginFunction(driver);
+        LoginObject.LoginObject(UserName, Password);
         BookingManagementCalender BM = new BookingManagementCalender(driver);
         Functions fn = new Functions(driver);
         fn.ClickBookingManagement();
         fn.setlistview();
         fn.setFilterbutton();
         fn.SetFilterAll();
-
-        BC.captureScreenshot(driver, new Object() {
-        }.getClass().getEnclosingMethod().getName());
+       captureScreenshot(driver, new Object() {}.getClass().getEnclosingMethod().getName());
     }
 }

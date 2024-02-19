@@ -15,21 +15,11 @@ public class SortCustomer {
     }
 
     @FindBy(xpath = "//span[normalize-space()='Customer Name']")
-    WebElement DortByName;
+    public WebElement DortByName;
     @FindBy(xpath = "//span[normalize-space()='Phone Number']")
-    WebElement SortByPhone;
+    public WebElement SortByPhone;
     @FindBy(xpath = "//span[normalize-space()='Email']")
-    WebElement SortByEmail;
+    public WebElement SortByEmail;
 
-    public void setSortbyname() {
-        DortByName.click();
-    }
 
-    public void setSortbyphone() {
-        SortByPhone.click();
-    }
-
-    public void setGetSortbyemail() {
-        SortByEmail.click();
-    }
 }

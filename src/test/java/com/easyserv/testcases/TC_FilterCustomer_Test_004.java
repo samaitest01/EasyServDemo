@@ -11,11 +11,11 @@ public class TC_FilterCustomer_Test_004 extends BaseClass {
     @Test
     public void Filtercustomer() throws InterruptedException {
         driver.get(URL);
-        LoginFunction lp = new LoginFunction(driver);
+        LoginFunction LoginObject = new LoginFunction(driver);
         CustomerSearchFunction CS = new CustomerSearchFunction(driver);
         FilterCustomerList FC = new FilterCustomerList(driver);
-        lp.LoginMethod(UserName, Password);
-        CS.setCustomerMngt();
+        LoginObject.LoginObject(UserName, Password);
+        CS.setCustomerManagement();
         FC.setFilterActive();
 
 

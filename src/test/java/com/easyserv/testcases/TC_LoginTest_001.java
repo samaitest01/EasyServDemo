@@ -13,10 +13,9 @@ public class TC_LoginTest_001 extends BaseClass {
         boolean testCaseStatus = false;
 
         driver.get(URL);
-        LoginFunction LF = new LoginFunction(driver);
-        BaseClass BC = new BaseClass();
-        LF.LoginMethod(UserName, Password);
-        testCaseStatus = LF.logoutmethod();
+        LoginFunction LoginPage = new LoginFunction(driver);
+        LoginPage.LoginObject(UserName, Password);
+        testCaseStatus = LoginPage.logoutmethod();
         // BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
         if (testCaseStatus) {
             test.pass("Step Passed --> : " + "Description" + " " + new Object() {

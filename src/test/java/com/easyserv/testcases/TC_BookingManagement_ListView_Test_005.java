@@ -10,9 +10,9 @@ public class TC_BookingManagement_ListView_Test_005 extends BaseClass {
     @Test
     public void bookingmanagement() throws InterruptedException {
         driver.get(URL);
-        LoginFunction lp = new LoginFunction(driver);
+        LoginFunction LoginObject = new LoginFunction(driver);
         BaseClass BC = new BaseClass();
-        lp.LoginMethod(UserName, Password);
+        LoginObject.LoginObject(UserName, Password);
         BookingCalenderFunction BM = new BookingCalenderFunction(driver);
         BM.ClickBookingManagement();
         BM.setChangeView();
