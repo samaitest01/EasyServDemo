@@ -1,8 +1,8 @@
 package com.easyserv.testcases;
 
+import com.easyserv.functions.BookingCalenderFunction;
 import com.easyserv.functions.LoginFunction;
-import com.easyserv.functions.Functions;
-import com.easyserv.pageobject.BookingManagementCalender;
+import com.easyserv.pageobject.BookingCalender;
 import com.easyserv.selenium.BaseClass;
 import org.testng.annotations.Test;
 
@@ -13,12 +13,14 @@ public class TC_BookingManagement_Filter_Test_007 extends BaseClass {
         driver.get(URL);
         LoginFunction LoginObject = new LoginFunction(driver);
         LoginObject.LoginMethod(UserName, Password);
-        BookingManagementCalender BM = new BookingManagementCalender(driver);
-        Functions fn = new Functions(driver);
-        fn.ClickBookingManagement();
-        fn.setlistview();
-        fn.setFilterbutton();
-        fn.SetFilterAll();
+        BookingCalenderFunction BookingCalendarObject = new BookingCalenderFunction(driver);
+        BookingCalendarObject.setlistview();
+        BookingCalendarObject.setChangeView();
+        BookingCalendarObject.setFilterButton();
+
+
+
+
        captureScreenshot(driver, new Object() {}.getClass().getEnclosingMethod().getName());
     }
 }

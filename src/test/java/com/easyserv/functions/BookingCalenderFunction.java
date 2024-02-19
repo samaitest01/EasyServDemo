@@ -1,11 +1,8 @@
 package com.easyserv.functions;
 
-import com.easyserv.pageobject.BookingManagementCalender;
 import org.openqa.selenium.WebDriver;
 
-import java.util.concurrent.TimeUnit;
-
-public class BookingCalenderFunction extends BookingManagementCalender {
+public class BookingCalenderFunction extends com.easyserv.pageobject.BookingCalender {
     WebDriver driver;
 
     public BookingCalenderFunction(WebDriver rdriver) {
@@ -13,7 +10,7 @@ public class BookingCalenderFunction extends BookingManagementCalender {
     }
 
     public void setlistview() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        Thread.sleep(3000);
         ListView.click();
         Thread.sleep(3000);
 

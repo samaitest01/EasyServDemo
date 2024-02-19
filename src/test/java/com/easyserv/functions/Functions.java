@@ -1,9 +1,9 @@
 package com.easyserv.functions;
 
-import com.easyserv.pageobject.BookingManagementCalender;
+import com.easyserv.pageobject.BookingCalender;
 import org.openqa.selenium.WebDriver;
 
-public class Functions extends BookingManagementCalender {
+public class Functions extends BookingCalender {
     WebDriver driver;
 
     public Functions(WebDriver rdriver) {

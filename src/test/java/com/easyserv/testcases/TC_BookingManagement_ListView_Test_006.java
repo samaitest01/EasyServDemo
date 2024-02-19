@@ -10,15 +10,12 @@ public class TC_BookingManagement_ListView_Test_006 extends BaseClass {
     @Test
     public void calenderview() throws InterruptedException {
         driver.get(URL);
-        BaseClass BC = new BaseClass();
         LoginFunction LoginObject = new LoginFunction(driver);
         LoginObject.LoginMethod(UserName, Password);
-        BookingCalenderFunction BM = new BookingCalenderFunction(driver);
-        BM.ClickBookingManagement();
-        BM.setlistview();
-        // BC.captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
-
-
+        BookingCalenderFunction BookingCalendar = new BookingCalenderFunction(driver);
+        BookingCalendar.ClickBookingManagement();
+        BookingCalendar.setlistview();
+        captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
     }
 
 }

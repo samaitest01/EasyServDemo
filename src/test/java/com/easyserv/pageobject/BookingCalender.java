@@ -5,12 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class BookingManagementCalender {
+public class BookingCalender {
 
 
     WebDriver driver;
 
-    public BookingManagementCalender(WebDriver rdriver) {
+    public BookingCalender(WebDriver rdriver) {
         driver = rdriver;
         PageFactory.initElements(driver, this);
     }
