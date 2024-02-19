@@ -1,4 +1,4 @@
-package com.easyserv.pageobject;
+package com.easyserv.selenium;
 
 import java.io.IOException;
 

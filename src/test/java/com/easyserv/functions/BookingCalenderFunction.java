@@ -14,13 +14,13 @@ public class BookingCalenderFunction extends BookingManagementCalender {
 
     public void setlistview() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        Listview.click();
+        ListView.click();
         Thread.sleep(3000);
 
     }
 
     public void setFilterButton() {
-        Filterbutton.click();
+        FilterButton.click();
     }
 
     public void SetFilterAll() {
@@ -29,7 +29,7 @@ public class BookingCalenderFunction extends BookingManagementCalender {
 
     public void SetFilterBookedin() {
 
-        FilterBookedin.click();
+        FilterBookedIn.click();
     }
 
     public void SetFilterCheckedIn() {
@@ -58,22 +58,22 @@ public class BookingCalenderFunction extends BookingManagementCalender {
 
     public void SetPaymentStatus() {
 
-        Paymentstatus.click();
+        PaymentStatus.click();
     }
 
     public void SetPaymentStatusPaid() {
 
-        PaymentstatusPaid.click();
+        PaymentStatusPaid.click();
     }
 
     public void SetPaymentStatusnotPaid() {
 
-        PaymentstatusNotPaid.click();
+        PaymentStatusNotPaid.click();
     }
 
     public void SetPaymentStatusRefunded() {
 
-        PaymentstatusRefunded.click();
+        PaymentStatusRefunded.click();
     }
 
     public void SetPaymentStatusPartialRefunded() {
@@ -81,12 +81,12 @@ public class BookingCalenderFunction extends BookingManagementCalender {
     }
 
     public void ClickBookingManagement() throws InterruptedException {
-        Bookingmanagement.click();
+        BookingManagement.click();
 
     }
 
     public void setChangeView() throws InterruptedException {
-        Bookingmanagement.click();
+        BookingManagement.click();
 
         DayView.click();
 

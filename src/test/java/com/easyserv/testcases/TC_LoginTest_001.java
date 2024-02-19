@@ -1,6 +1,6 @@
 package com.easyserv.testcases;
 
-import com.easyserv.functions.Loginfunction;
+import com.easyserv.functions.LoginFunction;
 import com.easyserv.selenium.BaseClass;
 import org.testng.annotations.Test;
 
@@ -13,7 +13,7 @@ public class TC_LoginTest_001 extends BaseClass {
         boolean testCaseStatus = false;
 
         driver.get(URL);
-        Loginfunction LF = new Loginfunction(driver);
+        LoginFunction LF = new LoginFunction(driver);
         BaseClass BC = new BaseClass();
         LF.LoginMethod(UserName, Password);
         testCaseStatus = LF.logoutmethod();

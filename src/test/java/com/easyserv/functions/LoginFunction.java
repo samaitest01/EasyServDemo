@@ -3,22 +3,22 @@ package com.easyserv.functions;
 import com.easyserv.pageobject.Login;
 import org.openqa.selenium.WebDriver;
 
-public class Loginfunction extends Login {
+public class LoginFunction extends Login {
     WebDriver driver;
     boolean testCaseStatus;
 
-    public Loginfunction(WebDriver rdriver) {
+    public LoginFunction(WebDriver rdriver) {
         super(rdriver);
     }
 
     public void LoginMethod(String emailID, String password) throws InterruptedException {
         try {
-            txtemail.sendKeys(emailID);
-            txtpwd.sendKeys(password);
-            btnsignin.click();
-            dropdownElement.click();
+            TestEmail.sendKeys(emailID);
+            TestPassword.sendKeys(password);
+            ButtonSignIn.click();
+            DropdownElement.click();
             GlobalElement.click();
-            Nextbtn.click();
+            NextButton.click();
             testCaseStatus = true;
 
         } catch (Exception e) {
@@ -31,7 +31,7 @@ public class Loginfunction extends Login {
         try {
 
             LogoutAvatar.click();
-            logoutbtn.click();
+            LogoutButton.click();
             testCaseStatus = true;
         } catch (Exception e) {
             System.out.println("Test Failed due to " + e);

@@ -3,25 +3,23 @@ package com.easyserv.functions;
 import com.easyserv.pageobject.BookingManagementCalender;
 import org.openqa.selenium.WebDriver;
 
-import java.util.concurrent.TimeUnit;
-
-public class functions extends BookingManagementCalender {
+public class Functions extends BookingManagementCalender {
     WebDriver driver;
 
-    public functions(WebDriver rdriver) {
+    public Functions(WebDriver rdriver) {
         super(rdriver);
     }
 
     public void setlistview() throws InterruptedException {
 
-        Listview.click();
+        ListView.click();
 
 
     }
 
     public void setFilterbutton() {
 
-        Filterbutton.click();
+        FilterButton.click();
     }
 
     public void SetFilterAll() {
@@ -31,7 +29,7 @@ public class functions extends BookingManagementCalender {
 
     public void SetFilterBookedin() {
 
-        FilterBookedin.click();
+        FilterBookedIn.click();
     }
 
     public void SetFilterCheckedIn() {
@@ -61,22 +59,22 @@ public class functions extends BookingManagementCalender {
 
     public void Setpaymentstatus() {
 
-        Paymentstatus.click();
+        PaymentStatus.click();
     }
 
     public void SetPaymentstatuspaid() {
 
-        PaymentstatusPaid.click();
+        PaymentStatusPaid.click();
     }
 
     public void SetPaymentstatusnotpaid() {
 
-        PaymentstatusNotPaid.click();
+        PaymentStatusNotPaid.click();
     }
 
     public void SetPaymentstatusrefunded() {
 
-        PaymentstatusRefunded.click();
+        PaymentStatusRefunded.click();
     }
 
     public void SetPaymentstatuspartialrefunded() {
@@ -85,7 +83,7 @@ public class functions extends BookingManagementCalender {
     }
 
     public void ClickBookingManagement() {
-        Bookingmanagement.click();
+        BookingManagement.click();
 
     }
 }

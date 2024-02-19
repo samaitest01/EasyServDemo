@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.concurrent.TimeUnit;
-
 public class BookingManagementCalender {
 
 
@@ -18,8 +16,7 @@ public class BookingManagementCalender {
     }
 
     @FindBy(xpath = "//a[normalize-space()='Booking Management']")
-    public
-    WebElement Bookingmanagement;
+    public WebElement BookingManagement;
     @FindBy(xpath = "//button[normalize-space()='day']")
     public WebElement DayView;
     @FindBy(xpath = "//button[normalize-space()='week']")
@@ -27,13 +24,13 @@ public class BookingManagementCalender {
     @FindBy(xpath = "//button[normalize-space()='month']")
     public WebElement MonthView;
     @FindBy(xpath = "//span[@aria-label='unordered-list']//*[name()='svg']")
-    public WebElement Listview;
+    public WebElement ListView;
     @FindBy(xpath = "//span[@aria-label='filter']")
-    public WebElement Filterbutton;
+    public WebElement FilterButton;
     @FindBy(xpath = "//div[@data-label='Status']//span[@title='All Status'][normalize-space()='All Status']")
     public WebElement FilterByAll;
     @FindBy(xpath = "//div[contains(text(),'Booked In')]")
-    public WebElement FilterBookedin;
+    public WebElement FilterBookedIn;
     @FindBy(xpath = "//div[contains(text(),'Checked In')]")
     public WebElement FilterCheckedIn;
     @FindBy(xpath = "//div[contains(text(),'Completed')]")
@@ -41,13 +38,13 @@ public class BookingManagementCalender {
     @FindBy(xpath = "//div[contains(text(),'Cancelled')]")
     public WebElement FilterCancelled;
     @FindBy(xpath = "//span[@title='All Status']")
-    public WebElement Paymentstatus;
+    public WebElement PaymentStatus;
     @FindBy(xpath = "//div[@class='ant-select-item-option-content'][normalize-space()='Paid']")
-    public WebElement PaymentstatusPaid;
+    public WebElement PaymentStatusPaid;
     @FindBy(xpath = "//div[contains(text(),'Not Paid')]")
-    public WebElement PaymentstatusNotPaid;
+    public WebElement PaymentStatusNotPaid;
     @FindBy(xpath = "//div[contains(text(),'Refunded')]")
-    public WebElement PaymentstatusRefunded;
+    public WebElement PaymentStatusRefunded;
     @FindBy(xpath = "//div[contains(text(),'Partially Refunded')]")
     public WebElement PaymentstatusPartiallyRefunded;
     @FindBy(xpath = "//span[normalize-space()='Apply']")

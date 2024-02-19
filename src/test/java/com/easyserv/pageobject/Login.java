@@ -6,8 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.concurrent.TimeUnit;
-
 public class Login {
 
     WebDriver driver;
@@ -19,21 +17,21 @@ public class Login {
     }
 
     @FindBy(id = "email")
-    public WebElement txtemail;
+    public WebElement TestEmail;
     @FindBy(id = "password")
-    public WebElement txtpwd;
+    public WebElement TestPassword;
     @FindBy(xpath = "//button[@type='submit']")
-    public WebElement btnsignin;
+    public WebElement ButtonSignIn;
     @FindBy(xpath = "//input[@id='serviceCentre']")
-    public WebElement dropdownElement;
+    public WebElement DropdownElement;
     @FindBy(xpath = "//button[@type='submit']")
-    public WebElement Nextbtn;
+    public WebElement NextButton;
     @FindBy(xpath = "//div[contains(text(),'Global')]")
     public WebElement GlobalElement;
     @FindBy(xpath = "//span[@class='ant-avatar ant-avatar-circle']")
     public WebElement LogoutAvatar;
     @FindBy(xpath = "//div[normalize-space()='Logout']")
-    public WebElement logoutbtn;
+    public WebElement LogoutButton;
 
 }
 

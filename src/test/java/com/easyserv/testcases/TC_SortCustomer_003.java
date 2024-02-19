@@ -1,21 +1,21 @@
 package com.easyserv.testcases;
 
-import com.easyserv.functions.Loginfunction;
+import com.easyserv.functions.LoginFunction;
 import com.easyserv.functions.CustomerSearchFunction;
-import com.easyserv.pageobject.sortcustomer;
+import com.easyserv.pageobject.SortCustomer;
 import com.easyserv.selenium.BaseClass;
 import org.testng.annotations.Test;
 
-public class TC_sortcustomer_003 extends BaseClass {
+public class TC_SortCustomer_003 extends BaseClass {
     @Test
-    public void sortcustomer() throws InterruptedException {
+    public void SortCustomer() throws InterruptedException {
         driver.get(URL);
-        Loginfunction lp = new Loginfunction(driver);
+        LoginFunction lp = new LoginFunction(driver);
         BaseClass BC = new BaseClass();
         lp.LoginMethod(UserName, Password);
         CustomerSearchFunction CS = new CustomerSearchFunction(driver);
         CS.setCustomerMngt();
-        sortcustomer srt = new sortcustomer(driver);
+        SortCustomer srt = new SortCustomer(driver);
         srt.setSortbyphone();
         srt.setGetSortbyemail();
         srt.setSortbyname();

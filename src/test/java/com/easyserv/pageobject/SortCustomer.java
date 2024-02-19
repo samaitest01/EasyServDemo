@@ -5,33 +5,31 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.concurrent.TimeUnit;
-
-public class sortcustomer {
+public class SortCustomer {
 
     WebDriver driver;
 
-    public sortcustomer(WebDriver rdriver) {
+    public SortCustomer(WebDriver rdriver) {
         driver = rdriver;
         PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = "//span[normalize-space()='Customer Name']")
-    WebElement sortbyname;
+    WebElement DortByName;
     @FindBy(xpath = "//span[normalize-space()='Phone Number']")
-    WebElement sortbyphone;
+    WebElement SortByPhone;
     @FindBy(xpath = "//span[normalize-space()='Email']")
-    WebElement getSortbyemail;
+    WebElement SortByEmail;
 
     public void setSortbyname() {
-        sortbyname.click();
+        DortByName.click();
     }
 
     public void setSortbyphone() {
-        sortbyphone.click();
+        SortByPhone.click();
     }
 
     public void setGetSortbyemail() {
-        getSortbyemail.click();
+        SortByEmail.click();
     }
 }
