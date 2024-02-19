@@ -23,7 +23,7 @@ public class BookingCalender {
     public WebElement WeekView;
     @FindBy(xpath = "//button[normalize-space()='month']")
     public WebElement MonthView;
-    @FindBy(xpath = "//span[@aria-label='unordered-list']//*[name()='svg']")
+    @FindBy(xpath = "//span[@aria-label='unordered-list']")
     public WebElement ListView;
     @FindBy(xpath = "//span[@aria-label='filter']")
     public WebElement FilterButton;

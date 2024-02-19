@@ -1,15 +1,16 @@
 package com.easyserv.functions;
 
+import com.easyserv.pageobject.BookingCalender;
 import org.openqa.selenium.WebDriver;
 
-public class BookingCalenderFunction extends com.easyserv.pageobject.BookingCalender {
+public class BookingCalenderFunction extends BookingCalender {
     WebDriver driver;
 
     public BookingCalenderFunction(WebDriver rdriver) {
         super(rdriver);
     }
 
-    public void setlistview() throws InterruptedException {
+    public void setListView() throws InterruptedException {
         Thread.sleep(3000);
         ListView.click();
         Thread.sleep(3000);
@@ -29,7 +30,8 @@ public class BookingCalenderFunction extends com.easyserv.pageobject.BookingCale
         FilterBookedIn.click();
     }
 
-    public void SetFilterCheckedIn() {
+    public void SetFilterCheckedIn() throws InterruptedException {
+        Thread.sleep(3000);
         FilterCheckedIn.click();
     }
 
@@ -83,6 +85,8 @@ public class BookingCalenderFunction extends com.easyserv.pageobject.BookingCale
     }
 
     public void setChangeView() throws InterruptedException {
+
+        Thread.sleep(3000);
         BookingManagement.click();
 
         DayView.click();
