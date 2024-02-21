@@ -6,7 +6,7 @@ import com.easyserv.functions.CustomerSearchFunction;
 import com.easyserv.selenium.Base;
 import org.testng.annotations.Test;
 
-public class TC_FilterCustomer_Test_004 extends Base {
+public class TC_004_FilterCustomer extends Base {
 
     @Test
     public void Filtercustomer() throws InterruptedException {

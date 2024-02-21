@@ -3,37 +3,37 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Austraxpc59/IdeaProjects/EasyServDemo/src/test/java/com/easyserv/testcases/TC_LoginTest_001.java">
         <classes>
-            <class name="com.easyserv.testcases.TC_LoginTest_001">
+            <class name="com.easyserv.testcases.TC_001_Login">
                 <methods>
 
                 </methods>
             </class>
-            <class name="com.easyserv.testcases.TC_CustomerSearch_Test_002">
+            <class name="com.easyserv.testcases.TC_002_CustomerSearch">
                 <methods>
 
                 </methods>
             </class>
-            <class name="com.easyserv.testcases.TC_SortCustomer_003">
+            <class name="com.easyserv.testcases.TC_003_SortCustomer">
                 <methods>
 
                 </methods>
             </class>
-            <class name="com.easyserv.testcases.TC_FilterCustomer_Test_004">
+            <class name="com.easyserv.testcases.TC_004_FilterCustomer">
                 <methods>
 
                 </methods>
             </class>
-            <class name="com.easyserv.testcases.TC_BookingManagement_ListView_Test_005">
+            <class name="com.easyserv.testcases.TC_005_BookingManagement_ListView">
                 <methods>
 
                 </methods>
             </class>
-            <class name="com.easyserv.testcases.TC_BookingManagement_ListView_Test_006">
+            <class name="com.easyserv.testcases.TC_006_BookingManagement_ListView">
                 <methods>
 
                 </methods>
             </class>
-            <class name="com.easyserv.testcases.TC_BookingManagement_Filter_Test_007">
+            <class name="com.easyserv.testcases.TC_007_BookingManagement_Filter">
                 <methods>
 
                 </methods>

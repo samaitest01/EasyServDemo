@@ -7,7 +7,7 @@ import com.easyserv.selenium.CustomListener;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 @Listeners(CustomListener.class)
-public class TC_CustomerSearch_Test_002 extends Base {
+public class TC_002_CustomerSearch extends Base {
 
     @Test
     public void customersearch() throws InterruptedException {

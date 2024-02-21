@@ -11,7 +11,7 @@ public class LoginFunction extends Login {
         super(rdriver);
     }
 
-    public void LoginMethod(String emailID, String password) throws InterruptedException {
+    public boolean LoginMethod(String emailID, String password) throws InterruptedException {
         try {
             TestEmail.sendKeys(emailID);
             TestPassword.sendKeys(password);
@@ -25,6 +25,7 @@ public class LoginFunction extends Login {
             System.out.println("Test Failed due to " + e);
             testCaseStatus = false;
         }
+        return  testCaseStatus;
     }
 
     public boolean logoutmethod() {

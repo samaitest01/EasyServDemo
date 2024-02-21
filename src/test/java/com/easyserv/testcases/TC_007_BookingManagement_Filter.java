@@ -5,18 +5,21 @@ import com.easyserv.functions.LoginFunction;
 import com.easyserv.selenium.Base;
 import org.testng.annotations.Test;
 
-public class TC_BookingManagement_ListView_Test_005 extends Base {
+public class TC_007_BookingManagement_Filter extends Base {
 
     @Test
-    public void bookingmanagement() throws InterruptedException {
+    public void Filterbookingview() throws InterruptedException {
         driver.get(URL);
         LoginFunction LoginObject = new LoginFunction(driver);
         LoginObject.LoginMethod(UserName, Password);
         BookingCalenderFunction BookingCalendarObject = new BookingCalenderFunction(driver);
         BookingCalendarObject.ClickBookingManagement();
-        BookingCalendarObject.setChangeView();
-        captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
+        BookingCalendarObject.setListView();
+        BookingCalendarObject.setFilterButton();
+        BookingCalendarObject.SetFilterAll();
+        BookingCalendarObject.SetFilterBookedin();
+        BookingCalendarObject.SetApplyFilter();
 
+       captureScreenshot(driver, new Object() {}.getClass().getEnclosingMethod().getName());
     }
-
 }

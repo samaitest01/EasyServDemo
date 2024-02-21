@@ -40,7 +40,6 @@ public class Base {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         extentReportCreating();
 
-
     }
 
     @AfterClass
@@ -52,8 +51,8 @@ public class Base {
 
     public void captureScreenshot(WebDriver driver, String methodName) {
         try {
-            TakesScreenshot ts = (TakesScreenshot) driver;
-            File source = ts.getScreenshotAs(OutputType.FILE);
+            //TakesScreenshot ts = (TakesScreenshot) driver;
+            File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
             // Generate a unique filename using timestamp
             SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMyyyy_HHmmssSSS");
