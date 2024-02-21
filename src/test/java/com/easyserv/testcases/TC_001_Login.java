@@ -17,5 +17,6 @@ public class TC_001_Login extends Base {
         driver.get(URL);
         LoginFunction LoginPage = new LoginFunction(driver);
         LoginPage.LoginMethod(UserName, Password);
+        captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
     }
 }

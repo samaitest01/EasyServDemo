@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class TC_007_BookingManagement_Filter extends Base {
 
     @Test
-    public void Filterbookingview() throws InterruptedException {
+    public void FilterBookingView() throws InterruptedException {
         driver.get(URL);
         LoginFunction LoginObject = new LoginFunction(driver);
         LoginObject.LoginMethod(UserName, Password);
@@ -19,7 +19,6 @@ public class TC_007_BookingManagement_Filter extends Base {
         BookingCalendarObject.SetFilterAll();
         BookingCalendarObject.SetFilterBookedin();
         BookingCalendarObject.SetApplyFilter();
-
        captureScreenshot(driver, new Object() {}.getClass().getEnclosingMethod().getName());
     }
 }
