@@ -18,14 +18,7 @@ public class TC_BookingManagement_Filter_Test_007 extends Base {
         BookingCalendarObject.setFilterButton();
         BookingCalendarObject.SetFilterAll();
         BookingCalendarObject.SetFilterBookedin();
-        //BookingCalendarObject.SetFilterCheckedIn();
-       // BookingCalendarObject.SetFilterCompleted();
-       // BookingCalendarObject.SetFilterCancelled();
         BookingCalendarObject.SetApplyFilter();
-      //  BookingCalendarObject.SetClearAll();
-
-
-
 
        captureScreenshot(driver, new Object() {}.getClass().getEnclosingMethod().getName());
     }

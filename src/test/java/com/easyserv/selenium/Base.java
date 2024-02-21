@@ -28,7 +28,7 @@ public class Base {
     public String UserName = "admin1@example.com";
     public String Password = "12345678";
     public WebDriver driver;
-    public String fileDestination = "C:\\Users\\admin\\IdeaProjects\\EasyServDemo\\Utilities\\ExtentReport\\";
+    public String fileDestination = "C:\\Users\\Austraxpc59\\IdeaProjects\\EasyServDemo1\\Utilities\\screenShots\\";
     UpdateReports updateReports = new UpdateReports();
     public String REPORT_PATH = fileDestination + "\\ExtentReport\\extent.html";
 

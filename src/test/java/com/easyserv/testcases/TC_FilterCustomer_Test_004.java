@@ -15,7 +15,6 @@ public class TC_FilterCustomer_Test_004 extends Base {
         CustomerSearchFunction CustomerSearchObject = new CustomerSearchFunction(driver);
         FilterCustomerListFunction FilterCustomerObject = new FilterCustomerListFunction(driver);
         LoginObject.LoginMethod(UserName, Password);
-        ;
         CustomerSearchObject.setCustomerManagement();
         FilterCustomerObject.setFilterActive();
 
