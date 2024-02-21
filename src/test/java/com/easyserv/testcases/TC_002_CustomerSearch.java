@@ -18,7 +18,7 @@ public class TC_002_CustomerSearch extends Base {
         cs.setCustomerManagement();
         cs.setSearchCustomer("Trung Truong");
         cs.setSearchButton();
-        captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
+        captureScreenshot(driver,new Object(){}.getClass().getEnclosingMethod().getName());
 
     }
 

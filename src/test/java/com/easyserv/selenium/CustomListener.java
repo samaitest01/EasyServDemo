@@ -18,7 +18,7 @@ public class CustomListener extends Base implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
-        captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
+        captureScreenshot(driver,new Object(){}.getClass().getEnclosingMethod().getName());
 
     }
 

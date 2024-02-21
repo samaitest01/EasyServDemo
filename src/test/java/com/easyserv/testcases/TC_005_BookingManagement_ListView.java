@@ -15,7 +15,7 @@ public class TC_005_BookingManagement_ListView extends Base {
         BookingCalenderFunction BookingCalendarObject = new BookingCalenderFunction(driver);
         BookingCalendarObject.ClickBookingManagement();
         BookingCalendarObject.setChangeView();
-        captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
+        captureScreenshot(driver,new Object(){}.getClass().getEnclosingMethod().getName());
 
     }
 

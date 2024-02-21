@@ -18,7 +18,7 @@ public class TC_003_SortCustomer extends Base {
         SortCustomer.setSortbyphone();
         SortCustomer.setGetSortbyemail();
         SortCustomer.setSortbyname();
-        captureScreenshot(driver, new Object(){}.getClass().getEnclosingMethod().getName());
+        captureScreenshot(driver,new Object(){}.getClass().getEnclosingMethod().getName());
 
     }
 

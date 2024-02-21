@@ -19,6 +19,6 @@ public class TC_007_BookingManagement_Filter extends Base {
         BookingCalendarObject.SetFilterAll();
         BookingCalendarObject.SetFilterBookedin();
         BookingCalendarObject.SetApplyFilter();
-       captureScreenshot(driver, new Object() {}.getClass().getEnclosingMethod().getName());
+       captureScreenshot(driver,new Object() {}.getClass().getEnclosingMethod().getName());
     }
 }

@@ -3,12 +3,15 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Austraxpc59/IdeaProjects/EasyServDemo/src/test/java/com/easyserv/testcases/TC_LoginTest_001.java">
         <classes>
-            <class name="com.easyserv.testcases.TC_001_Login">
+            <class name="com.easyserv.testcases.AllTestcases">
                 <methods>
 
                 </methods>
             </class>
-            <class name="com.easyserv.testcases.TC_002_CustomerSearch">
+        </classes>
+    </test>
+</suite>
+          <!--  <class name="com.easyserv.testcases.TC_002_CustomerSearch">
                 <methods>
 
                 </methods>
@@ -41,4 +44,4 @@
 
             </classes>
     </test>
-</suite>
+</suite>-->
