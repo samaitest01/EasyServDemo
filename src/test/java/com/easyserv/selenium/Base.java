@@ -19,7 +19,7 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 
-public class BaseClass {
+public class Base {
     public ExtentSparkReporter spark;
     public ExtentTest Parent;
     public ExtentTest test;
@@ -28,7 +28,7 @@ public class BaseClass {
     public String UserName = "admin1@example.com";
     public String Password = "12345678";
     public WebDriver driver;
-    public String fileDestination = "C:\\Users\\Austraxpc59\\IdeaProjects\\EasyServDemo\\Utilities";
+    public String fileDestination = "C:\\Users\\admin\\IdeaProjects\\EasyServDemo\\Utilities\\ExtentReport\\";
     UpdateReports updateReports = new UpdateReports();
     public String REPORT_PATH = fileDestination + "\\ExtentReport\\extent.html";
 

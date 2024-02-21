@@ -2,10 +2,10 @@ package com.easyserv.testcases;
 
 import com.easyserv.functions.BookingCalenderFunction;
 import com.easyserv.functions.LoginFunction;
-import com.easyserv.selenium.BaseClass;
+import com.easyserv.selenium.Base;
 import org.testng.annotations.Test;
 
-public class TC_BookingManagement_ListView_Test_005 extends BaseClass {
+public class TC_BookingManagement_ListView_Test_005 extends Base {
 
     @Test
     public void bookingmanagement() throws InterruptedException {

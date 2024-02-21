@@ -1,11 +1,11 @@
 package com.easyserv.testcases;
 
 import com.easyserv.functions.LoginFunction;
-import com.easyserv.selenium.BaseClass;
+import com.easyserv.selenium.Base;
 import org.testng.annotations.Test;
 
 
-public class TC_LoginTest_001 extends BaseClass {
+public class TC_LoginTest_001 extends Base {
 
 
     @Test
@@ -25,6 +25,8 @@ public class TC_LoginTest_001 extends BaseClass {
             test.fail("Step Failed --> : " + "Description" + " " + new Object() {
             }.getClass().getEnclosingMethod().getName());
         }
+
+
 
 
     }
