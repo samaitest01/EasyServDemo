@@ -26,7 +26,7 @@
 
                 </methods>
             </class>
-            <class name="com.easyserv.testcases.TC_005_BookingManagement_ListView">
+            <class name="com.easyserv.testcases.TC_005_BookingManagement_ChangeView">
                 <methods>
 
                 </methods>

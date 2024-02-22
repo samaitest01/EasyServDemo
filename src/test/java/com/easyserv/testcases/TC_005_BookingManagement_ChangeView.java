@@ -5,7 +5,7 @@ import com.easyserv.functions.LoginFunction;
 import com.easyserv.selenium.Base;
 import org.testng.annotations.Test;
 
-public class TC_005_BookingManagement_ListView extends Base {
+public class TC_005_BookingManagement_ChangeView extends Base {
 
     @Test
     public void bookingmanagement() throws InterruptedException {
