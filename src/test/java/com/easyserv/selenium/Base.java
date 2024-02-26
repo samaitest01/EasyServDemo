@@ -47,7 +47,7 @@ public class Base {
 
     }
 
-    /*public void captureScreenshot(WebDriver driver, String methodName) {
+    public void captureScreenshot(WebDriver driver, String methodName) {
         try {
             //TakesScreenshot ts = (TakesScreenshot) driver;
             File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -63,7 +63,7 @@ public class Base {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }*/
+    }
 
 
 }
