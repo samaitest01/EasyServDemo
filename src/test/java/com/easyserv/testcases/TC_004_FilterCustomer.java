@@ -17,7 +17,7 @@ public class TC_004_FilterCustomer extends Base {
         LoginObject.LoginMethod(UserName, Password);
         CustomerSearchObject.setCustomerManagement();
         FilterCustomerObject.setFilterActive();
-        captureScreenshot(driver,new Object(){}.getClass().getEnclosingMethod().getName());
+       // captureScreenshot(driver,new Object(){}.getClass().getEnclosingMethod().getName());
 
 
     }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/Austraxpc59/IdeaProjects/EasyServDemo/src/test/java/com/easyserv/testcases/TC_LoginTest_001.java">
+    <test verbose="2" preserve-order="true" name="AllTestcases.java">
         <classes>
             <class name="com.easyserv.testcases.AllTestcases">
                 <methods>
@@ -11,37 +11,3 @@
         </classes>
     </test>
 </suite>
-          <!--  <class name="com.easyserv.testcases.TC_002_CustomerSearch">
-                <methods>
-
-                </methods>
-            </class>
-            <class name="com.easyserv.testcases.TC_003_SortCustomer">
-                <methods>
-
-                </methods>
-            </class>
-            <class name="com.easyserv.testcases.TC_004_FilterCustomer">
-                <methods>
-
-                </methods>
-            </class>
-            <class name="com.easyserv.testcases.TC_005_BookingManagement_ChangeView">
-                <methods>
-
-                </methods>
-            </class>
-            <class name="com.easyserv.testcases.TC_006_BookingManagement_ListView">
-                <methods>
-
-                </methods>
-            </class>
-            <class name="com.easyserv.testcases.TC_007_BookingManagement_Filter">
-                <methods>
-
-                </methods>
-            </class>
-
-            </classes>
-    </test>
-</suite>-->

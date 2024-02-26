@@ -12,20 +12,14 @@ public class TC_001_Login extends Base {
 
 
     @Test
-    public void loginTest() throws InterruptedException {
-        boolean testCaseStatus = false;
-try {
-    driver.get(URL);
-    LoginFunction LoginPage = new LoginFunction(driver);
-    LoginPage.LoginMethod(UserName, Password);
-
-}catch (Exception e){
-    captureScreenshot(driver,new Object(){}.getClass().getEnclosingMethod().getName());
-
-}
-
-
-
-
+    public void loginTest() {
+        driver.get(URL);
+        LoginFunction LoginPage = new LoginFunction(driver);
+        LoginPage.LoginMethod(UserName, Password);
+        /*captureScreenshot(driver, new Object() {
+        }.getClass().getEnclosingMethod().getName());
+*/
     }
+
+
 }

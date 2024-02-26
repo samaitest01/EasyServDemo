@@ -11,36 +11,21 @@ public class LoginFunction extends Login {
         super(rdriver);
     }
 
-    public boolean LoginMethod(String emailID, String password) throws InterruptedException {
-        try {
-            TestEmail.sendKeys(emailID);
-            TestPassword.sendKeys(password);
-            ButtonSignIn.click();
-            DropdownElement.click();
-            GlobalElement.click();
-            NextButton.click();
-            testCaseStatus = true;
+    public void LoginMethod(String emailID, String password) {
 
-        } catch (Exception e) {
-            System.out.println("Test Failed due to " + e);
-            testCaseStatus = false;
-        }
-        return  testCaseStatus;
+        TestEmail.sendKeys(emailID);
+        TestPassword.sendKeys(password);
+        ButtonSignIn.click();
+        DropdownElement.click();
+        GlobalElement.click();
+        NextButton.click();
+
     }
 
-    public boolean logoutmethod() {
-        try {
-
+    public void logoutmethod()
+    {
             LogoutAvatar.click();
-            LogoutButton.click();
-            testCaseStatus = true;
-        } catch (Exception e) {
-            System.out.println("Test Failed due to " + e);
-            testCaseStatus = false;
-        }
-        return testCaseStatus;
+        LogoutButton.click();
+        testCaseStatus = true;
     }
-
-
-
 }

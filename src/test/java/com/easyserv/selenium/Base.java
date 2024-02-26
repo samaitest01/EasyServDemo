@@ -24,7 +24,7 @@ public class Base {
     public static ExtentReports reports;
     public String URL = "https://osb-admin-staging.siliconstack.com.au/login";
     public String UserName = "admin1@example.com";
-    public String Password = "12345678";
+    public String Password = "1245678";
     public static WebDriver driver;
     public String fileDestination = "C:\\Users\\Austraxpc59\\IdeaProjects\\EasyServDemo1\\Utilities\\";
     UpdateReports updateReports = new UpdateReports();
@@ -47,7 +47,7 @@ public class Base {
 
     }
 
-    public void captureScreenshot(WebDriver driver, String methodName) {
+    /*public void captureScreenshot(WebDriver driver, String methodName) {
         try {
             //TakesScreenshot ts = (TakesScreenshot) driver;
             File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -63,7 +63,7 @@ public class Base {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
 
 }
