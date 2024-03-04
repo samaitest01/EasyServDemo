@@ -24,9 +24,9 @@ public class Base {
     public static ExtentReports reports;
     public String URL = "https://osb-admin-staging.siliconstack.com.au/login";
     public String UserName = "admin1@example.com";
-    public String Password = "1245678";
+    public String Password = "12345678";
     public static WebDriver driver;
-    public String fileDestination = "C:\\Users\\Austraxpc59\\IdeaProjects\\EasyServDemo1\\Utilities\\";
+    public String fileDestination = "C:\\Users\\Austraxpc59\\IdeaProjects\\EasyServDemo\\Utilities\\";
     UpdateReports updateReports = new UpdateReports();
     public String REPORT_PATH = fileDestination + "\\ExtentReport\\extent.html";
 
@@ -42,8 +42,8 @@ public class Base {
     @AfterClass
     public void exit() {
 
-        reports.flush();
-        driver.quit();
+        //reports.flush();
+       // driver.quit();
 
     }
 

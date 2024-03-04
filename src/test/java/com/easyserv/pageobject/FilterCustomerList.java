@@ -15,8 +15,7 @@ public class FilterCustomerList {
     public FilterCustomerList(WebDriver rdriver) {
         driver = rdriver;
         PageFactory.initElements(driver, this);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    }
+            }
 
     @FindBy(xpath = "//button[@class='ant-btn ant-btn-default ant-btn-lg ant-btn-icon-only']")
     public WebElement FilterIcon;

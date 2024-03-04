@@ -1,5 +1,4 @@
 package com.easyserv.testcases;
-
 import com.easyserv.functions.LoginFunction;
 import com.easyserv.selenium.Base;
 import com.easyserv.selenium.CustomListener;
