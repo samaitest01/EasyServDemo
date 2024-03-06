@@ -3,11 +3,15 @@ package com.easyserv.selenium;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -64,6 +68,65 @@ public class Base {
             e.printStackTrace();
         }
     }
+
+
+
+
+    public void sameer()
+        {
+            driver.findElement(By.xpath("//div[@class='ant-picker ant-picker-focused']")).click();
+             new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class='ant-picker-panel']")));
+           String  monthYearVal = driver.findElement(By.xpath("//div[@class='ant-picker-header-view']")).getText();
+
+
+        }
+        public static String[] getMonthYear(String monthYearVal )
+        {
+            return monthYearVal.split("");
+        }
+
+
+      public static void selectDate(String exDay, String exMonth, String exYear){
+        if(exMonth.equals("February") && Integer.parseInt(exDay)>29)
+        {
+            System.out.println("wrong date" + exMonth + ":" + exDay);
+            return;
+        }
+
+        if (Integer.parseInt(exDay)> 32)
+        {
+            System.out.println("wrong date" + exMonth + ":" + exDay);
+            return;
+        }
+        String monthYearVal = driver.findElement(By.xpath("")).getText();
+        System.out.println(monthYearVal);
+        while (!getMonthYear((monthYearVal)[0].equals(exMonth)&& getMonthYear(monthYearVal)[1].equals(exYear))
+        driver.findElement(By.xpath("").click();
+               // monthYearVal = driver.findElement(By.xpath("")).getText();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

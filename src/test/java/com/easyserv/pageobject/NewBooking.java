@@ -9,7 +9,7 @@ public class NewBooking {
 
 
 
-    WebDriver driver;
+    protected WebDriver driver;
 
     public NewBooking(WebDriver rdriver) {
         driver = rdriver;
