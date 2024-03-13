@@ -72,38 +72,7 @@ public class Base {
 
 
 
-    public void sameer()
-        {
-            driver.findElement(By.xpath("//div[@class='ant-picker ant-picker-focused']")).click();
-             new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class='ant-picker-panel']")));
-           String  monthYearVal = driver.findElement(By.xpath("//div[@class='ant-picker-header-view']")).getText();
 
-
-        }
-        public static String[] getMonthYear(String monthYearVal )
-        {
-            return monthYearVal.split("");
-        }
-
-
-      public static void selectDate(String exDay, String exMonth, String exYear){
-        if(exMonth.equals("February") && Integer.parseInt(exDay)>29)
-        {
-            System.out.println("wrong date" + exMonth + ":" + exDay);
-            return;
-        }
-
-        if (Integer.parseInt(exDay)> 32)
-        {
-            System.out.println("wrong date" + exMonth + ":" + exDay);
-            return;
-        }
-        String monthYearVal = driver.findElement(By.xpath("")).getText();
-        System.out.println(monthYearVal);
-        while (!getMonthYear((monthYearVal)[0].equals(exMonth)&& getMonthYear(monthYearVal)[1].equals(exYear))
-        driver.findElement(By.xpath("").click();
-               // monthYearVal = driver.findElement(By.xpath("")).getText();
-    }
 
 
 
